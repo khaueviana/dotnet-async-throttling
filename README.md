@@ -1,6 +1,6 @@
 # dotnet-async-throttling
 
-The goal is to find the fastest way to perform multiple tasks in parallel using throttling.
+The purpose of this benchmark is to find the fastest way to perform multiple tasks in parallel using throttling.
 
 ## Scenarios with Throttling
 
@@ -27,7 +27,7 @@ The goal is to find the fastest way to perform multiple tasks in parallel using 
 - Throttling = 10 tasks  
 ```
 
-## Scenario without Throttling
+## Scenario without Throttling (for comparison only)
 
 - AwaitWithoutThrottling 
     - performing all the tasks at the same time 
