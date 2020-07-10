@@ -4,9 +4,20 @@ The goal is to find the fastest way to perform multiple tasks in parallel using 
 
 ## Scenarios with Throttling
 
-- Await.WhenAll - awaiting all the tasks and removing them from the task list at each throttle cicle
-- Await.WhenAny() - awaiting any task and removing only one completed task at each throttle cicle
-- Await.WhenAny() - awaiting any task and removing all completed tasks at each throttle cicle
+- AwaitWhenAllWithThrottling() 
+    - performing *N* tasks at a time 
+    - awaiting all *N* tasks
+    - removing them from the task list at each throttle cicle
+
+- AwaitWhenAnyWithThrottling() 
+    - performing *N* tasks at a time and 
+    - awaiting any task from *N*
+    - removing only one completed task at each throttle cicle
+
+- AwaitWhenAnyAndCompletedWithThrottling() 
+    - performing *N* tasks at a time
+    - awaiting any task from *N*
+    - removing all completed tasks at each throttle cicle
 
 **Parameters**
 
@@ -18,7 +29,9 @@ The goal is to find the fastest way to perform multiple tasks in parallel using 
 
 ## Scenario without Throttling
 
-- AwaitWithoutThrottling
+- AwaitWithoutThrottling 
+    - performing all the tasks at the same time 
+    - awaiting one task at a time
 
 **Parameters**
 
