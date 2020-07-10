@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>BenchmarkThrottling.AwaitBenchmark-20200709-225033</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.18363.900 (1909/November2018Update/19H2)
+Intel Core i7-8850H CPU 2.60GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET Core SDK=3.1.301
+  [Host]     : .NET Core 3.1.5 (CoreCLR 4.700.20.26901, CoreFX 4.700.20.27001), X64 RyuJIT
+  DefaultJob : .NET Core 3.1.5 (CoreCLR 4.700.20.26901, CoreFX 4.700.20.27001), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>                          Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>AwaitWhenAllWithThrottling</td><td>100.07 s</td><td>0.043 s</td><td>0.040 s</td>
+</tr><tr><td>AwaitWhenAnyWithThrottling</td><td>60.11 s</td><td>0.017 s</td><td>0.016 s</td>
+</tr><tr><td>AwaitWhenAnyAndCompletedWithThrottling</td><td>60.10 s</td><td>0.013 s</td><td>0.012 s</td>
+</tr><tr><td>AwaitWithoutThrottling</td><td>10.01 s</td><td>0.008 s</td><td>0.008 s</td>
+</tr></tbody></table>
+</body>
+</html>
