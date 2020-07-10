@@ -19,7 +19,7 @@ The purpose of this benchmark is to find the fastest way to perform multiple tas
     - awaiting any task from *N*
     - removing all completed tasks at each throttle cicle
 
-**Parameters**
+**Workload**
 
 ```
 - Taks Counts = 100
@@ -33,7 +33,7 @@ The purpose of this benchmark is to find the fastest way to perform multiple tas
     - performing all the tasks at the same time 
     - awaiting one task at a time
 
-**Parameters**
+**Workload**
 
 ```
 - Taks Counts = 100
