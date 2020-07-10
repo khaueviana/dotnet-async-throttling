@@ -11,8 +11,6 @@ namespace BenchmarkThrottling
             BenchmarkRunner.Run<AwaitBenchmark>();
             
             Console.ReadKey();
-
-            //await new AwaitBenchmark().AwaitWhenAnyAndCompletedWithThrottling();
         }
     }
 }
